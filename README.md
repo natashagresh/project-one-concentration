@@ -28,7 +28,7 @@ I have decided to do the game concentration. My theme will be (...not sure yet).
   HTML, CSS, JS and (JQuery?)
  
 **4.PseudoCode**
- 1. Do basic html. Set up CSS and classes/ids so that I have basic layout of game
+ 1. Do basic html. Set up CSS and classes/ids so that I have basic layout of game. Create boxes for [tries/matches] & [total score/games played]
  2. Will start with an array to log in all 16 cards
  3. Make a grid
  3. ...

@@ -2,16 +2,16 @@ body{
 
 }
 
-.h1{
-
-}
-
 #container{
 
 }
 
 .game-score{
-
+   width:100px;
+   height:100px;
+   margin-left:50px;
+   margin-top:30px;
+   float: left;
 }
 
 #tries{
@@ -23,7 +23,11 @@ body{
 }
 
 .overall-game-score{
-
+   width:100px;
+   height:100px;
+   margin-right:50px;
+   margin-top: 30px;
+   float:right;
 }
 
 #total-score{
@@ -34,6 +38,71 @@ body{
 
 }
 
+#h1{
+   margin:40px auto;
+   text-align: center;
+   font-weight: 800;
+   font-size: 70px;
+}
+
+#all-squares{
+	margin:0 auto;
+	border-style: solid;
+	border-color: black;
+	width:480px;
+	height:480px;
+}
+
+#square-one{
+	width: 100px;
+	height:100px;
+	background-color: red;
+	float:left;
+	margin: 10px;
+}
+
+#square-two{
+	width: 100px;
+	height:100px;
+	background-color: blue;
+    float:left;
+	margin:10px;
+}
+
+#square-three{
+    width: 100px;
+	height:100px;
+	background-color: red;
+    float:left;
+	margin:10px;
+}
+
+#square-four{
+    width: 100px;
+	height:100px;
+	background-color: blue;
+    float:left;
+	margin:10px;
+}
+
+#square-five{
+
+}
+
+#square-six{
+
+}
+
+#square-seven{
+
+}
+
+#square-eight{
+
+}
+
 #button{
-	
+   margin:0 auto;
+   text-align: center;
+   padding-top: 
 }
