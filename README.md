@@ -29,7 +29,7 @@ I have decided to do the game concentration. My theme will be (...not sure yet).
   
 **4.Wire Frame**
  1. [Beginning of Game](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7176.JPG)
- 2. [One first move](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7175.JPG)
+ 2. [Won first move](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7175.JPG)
  3. [Lost first move](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7173.JPG)
  4. [First game won!](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7174.JPG)
     
