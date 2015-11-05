@@ -26,14 +26,20 @@ I have decided to do the game concentration. My theme will be (...not sure yet).
 
 **3.List of technologies use:**
   HTML, CSS, JS and (JQuery?)
+ 
+**4.PseudoCode**
+ 1. Do basic html. Set up CSS and classes/ids so that I have basic layout of game
+ 2. Will start with an array to log in all 16 cards
+ 3. Make a grid
+ 3. ...
   
-**4.Wire Frame**
+**5.Wire Frame**
  1. [Beginning of Game](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7176.JPG)
  2. [Won first move](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7175.JPG)
  3. [Lost first move](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7173.JPG)
  4. [First game won!](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7174.JPG)
     
-**5.Link to playable app:** 
+**6.Link to playable app:** 
 ....  
     
     
