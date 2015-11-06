@@ -56,7 +56,6 @@ body{
 .cards{
 	width: 100px;
 	height:100px;
-	background-color: red;
 	float:left;
 	margin: 10px;
 }
@@ -93,6 +92,37 @@ body{
 	margin:10px;
 }
 
+.imageOne{
+	background-color: yellow;
+}
+
+.imageTwo{
+	background-color: blue;
+}
+
+.imageThree{
+	background-color: yellow;
+}
+
+.imageFour{
+	background-color: pink
+}
+
+.imageFive{
+	background-color:green;
+}
+
+.imageSix{
+    background-color: orange;
+}
+
+.imageSeven{
+	background-color: purple;
+}
+
+.imageEight{
+	background-color: black;
+}
 
 #play{
 	margin:0 auto;
