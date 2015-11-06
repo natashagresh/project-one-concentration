@@ -53,6 +53,14 @@ body{
 	height:480px;
 }
 
+.cards{
+	width: 100px;
+	height:100px;
+	background-color: red;
+	float:left;
+	margin: 10px;
+}
+
 #square-one{
 	width: 100px;
 	height:100px;
@@ -85,20 +93,10 @@ body{
 	margin:10px;
 }
 
-#square-five{
 
-}
-
-#square-six{
-
-}
-
-#square-seven{
-
-}
-
-#square-eight{
-
+#play{
+	margin:0 auto;
+   text-align: center;
 }
 
 #button{
