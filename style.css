@@ -45,7 +45,7 @@ body{
    font-size: 70px;
 }
 
-#game-board{
+.game-board{
 	margin:0 auto;
 	border-style: solid;
 	border-color: black;
@@ -130,7 +130,7 @@ body{
    text-align: center;
 }
 
-#button{
+.button{
    margin:0 auto;
    text-align: center;
    padding-top: 

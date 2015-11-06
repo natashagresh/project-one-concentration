@@ -1,7 +1,7 @@
 console.log('Im connected. Yey!');
 
-var gameBoard=document.querySelector('#game-board');
-var resetButton=document.querySelector('#button');
+var gameBoard=document.querySelector('.game-board');
+var resetButton=document.querySelector('.button');
 var playButton=document.querySelector('.play');
 var cards=document.querySelector('.cards');
 
@@ -59,16 +59,29 @@ function shuffle(array) {
 
 var shuffleSquares=shuffle(allImages);
 
+
 ///add event listener on cards///
 var clickSquares= function(){
 	cards=event.target;
-	  if(clickCounter===0) { ///if close off function gettingPlayButtonToWork, change this back to 0.///
+	  if(clickCounter===0) { 
         cards.classList.add(shuffleSquares[0]);
         clickCounter++;
 	  }
 };
 
 cards.addEventListener('click', clickSquares);
+///
+// var clickSquaresOne= function(){
+// 	cards.length=event.target;
+// 	  if(clickCounter===1) { 
+//         cards.classList.toggle('visible',clickCounter===1);
+//         clickCounter++;
+// 	  }
+// };
+
+// cards.addEventListener('click', clickSquaresOne);
+
+
 
 
 
@@ -83,7 +96,7 @@ cards.addEventListener('click', clickSquares);
 //       }
 // }
 
-playButton.addEventListener('click', gettingPlayButtonToWork)
+// playButton.addEventListener('click', gettingPlayButtonToWork)
 ///////
 
 ///J Query///
