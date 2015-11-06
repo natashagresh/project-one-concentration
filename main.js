@@ -2,16 +2,37 @@ console.log('Im connected. Yey!');
 
 var gameBoard=document.querySelector('#game-board');
 var resetButton=document.querySelector('#button');
-var playButton=document.querySelector('#play');
+var playButton=document.querySelector('.play');
 var cards=document.querySelector('.cards');
 
+var imageOne=document.querySelector('.imageOne');
+var imageTwo=document.querySelector('.imageTwo');
+var imageThree=document.querySelector('.imageThree');
+var imageFour=document.querySelector('.imageFour');
+var imageFive=document.querySelector('.imageFive');
+var imageSix=document.querySelector('.imageSix');
+var imageSeven=document.querySelector('.imageSeven');
+var imageEight=document.querySelector('.imageEight');
+var imageNine=document.querySelector('.imageOne');
+var imageTen=document.querySelector('.imageTwo');
+var imageEleven=document.querySelector('.imageThree');
+var imageTwelve=document.querySelector('.imageFour');
+var imageThirteen=document.querySelector('.imageFive');
+var imageFourteen=document.querySelector('.imageSix');
+var imageFifteen=document.querySelector('.imageSeven');
+var imageSixteen=document.querySelector('.imageEight');
 
-var squareOne=document.getElementById('square-one');
-var squareTwo=document.getElementById('square-two');
-var squareThree=document.getElementById('square-three');
-var squareFour=document.getElementById('square-four');
 
-var squares=[squareOne, squareTwo, squareThree, squareFour];
+var allImages=['imageOne', 'imageTwo', 'imageThree', 'imageFour', 'imageFive',
+'imageSix', 'imageSeven', 'imageEight','imageNine', 'imageTen','imageEleven', 
+'imageTwelve', 'imageFourteen', 'imageFifteen', 'imageSixteen'];
+
+// var squareOne=document.getElementById('square-one');
+// var squareTwo=document.getElementById('square-two');
+// var squareThree=document.getElementById('square-three');
+// var squareFour=document.getElementById('square-four');
+
+// var squares=[squareOne, squareTwo, squareThree, squareFour];
 
 var clickCounter= 0;
 
@@ -28,34 +49,42 @@ function shuffle(array) {
     currentIndex -= 1;
 
     // And swap it with the current element.
-    temporaryValue = squares[currentIndex];
+    temporaryValue = allImages[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
   }
 
-  return squares;
+  return allImages;
 }
 
-var shuffleSquares=shuffle(squares);
+var shuffleSquares=shuffle(allImages);
 
-///add event listener on play button///
-var startGame= function(){
-	playButton=event.target;
-	  if(clickCounter===0) {
-        squares.div.classList.add(shuffleSquares[0]);
+///add event listener on cards///
+var clickSquares= function(){
+	cards=event.target;
+	  if(clickCounter===0) { ///if close off function gettingPlayButtonToWork, change this back to 0.///
+        cards.classList.add(shuffleSquares[0]);
         clickCounter++;
 	  }
 };
-playButton.addEventListener('click', startGame);
 
-///add event listener on squares///
-// var clickSquares= function(){
-// 	square=event.target;
-// 	   if()
+cards.addEventListener('click', clickSquares);
+
+
+
+///not sure if i should have this??//
+// var gettingPlayButtonToWork= function(){
+//    playButton=event.target;
+//       if (clickCounter===0) {
+//       	playButton.classList.add(shuffleSquares);
+//       	clickCounter++;
+//       }else if(clickCounter===25) {
+//         shuffle(allImages)
+//       }
 // }
 
-// cards.addEventListener('click', clickSquares);
-
+playButton.addEventListener('click', gettingPlayButtonToWork)
+///////
 
 ///J Query///
 $(document).ready(function(){
