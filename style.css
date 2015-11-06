@@ -45,7 +45,7 @@ body{
    font-size: 70px;
 }
 
-#all-squares{
+#game-board{
 	margin:0 auto;
 	border-style: solid;
 	border-color: black;
@@ -64,7 +64,7 @@ body{
 #square-two{
 	width: 100px;
 	height:100px;
-	background-color: blue;
+	background-color: red;
     float:left;
 	margin:10px;
 }
@@ -80,7 +80,7 @@ body{
 #square-four{
     width: 100px;
 	height:100px;
-	background-color: blue;
+	background-color: red;
     float:left;
 	margin:10px;
 }
