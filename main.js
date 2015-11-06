@@ -66,6 +66,7 @@ var clickSquares= function(){
 	  if(clickCounter===0) { 
         cards.classList.add(shuffleSquares[0]);
         clickCounter++;
+        cards.removeEventListener('click',clickSquares);
 	  }
 };
 
@@ -74,14 +75,12 @@ cards.addEventListener('click', clickSquares);
 // var clickSquaresOne= function(){
 // 	cards.length=event.target;
 // 	  if(clickCounter===1) { 
-//         cards.classList.toggle('visible',clickCounter===1);
+//         cards.classList.add(1);
 //         clickCounter++;
 // 	  }
 // };
 
 // cards.addEventListener('click', clickSquaresOne);
-
-
 
 
 
