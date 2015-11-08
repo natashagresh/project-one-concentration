@@ -61,8 +61,8 @@ body{
 	margin: 10px;
 	border-style: solid;
 	border-color: black;
-	background-color: red;
 	margin: 10px;
+	background-color: red;
 }
 
 #square-one{
@@ -70,6 +70,7 @@ body{
 	height:100px;
 	float:left;
 	margin: 10px;
+	background-color: pink;
 }
 
 #square-two{
@@ -135,3 +136,4 @@ body{
    text-align: center;
    padding-top: 
 }
+

@@ -23,9 +23,12 @@ var imageFifteen=document.querySelector('.imageSeven');
 var imageSixteen=document.querySelector('.imageEight');
 
 
-var allImages=['imageOne', 'imageTwo', 'imageThree', 'imageFour', 'imageFive',
-'imageSix', 'imageSeven', 'imageEight','imageNine', 'imageTen','imageEleven', 
-'imageTwelve', 'imageFourteen', 'imageFifteen', 'imageSixteen'];
+// var allImages=['imageOne', 'imageTwo', 'imageThree', 'imageFour', 'imageFive',
+// 'imageSix', 'imageSeven', 'imageEight','imageNine', 'imageTen','imageEleven', 
+// 'imageTwelve', 'imageFourteen', 'imageFifteen', 'imageSixteen'];
+
+var allImages=[imageOne, imageTwo, imageThree, imageFour, imageFive, imageSix, imageSeven, imageEight, 
+imageNine, imageTen, imageEleven, imageTwelve, imageFourteen, imageFifteen, imageSixteen];
 
 var squareOne=document.getElementById('square-one');
 var squareTwo=document.getElementById('square-two');
@@ -62,18 +65,18 @@ function shuffle(array) {
     currentIndex -= 1;
 
     // And swap it with the current element.
-    temporaryValue = allImages[currentIndex];
+    temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
   }
 
-  return allImages;
+  return array;
 }
 
 var shuffleSquares=shuffle(allImages);
 
 
-/add event listener on cards///
+//add event listener on cards///
 // var clickSquares= function(event){
 // 	cards=event.target;
 // 	  if(clickCounter===0) { 
@@ -93,27 +96,32 @@ var shuffleSquares=shuffle(allImages);
 
 // squareTwo.addEventListener('click', clickSquareTwo, false);
 
-
-var createEventListeners = function(){
+///A for loop on Event listeners on cards///
+var createEventListenersOnCards = function(){
   for (var i = 0; i < squares.length; i++) 
-  	squares[i].addEventListener('click', createEventListeners);
+  	squares[i].addEventListener('click', createEventListenersOnCards);
   	console.log(event.target);
 };
 
-
-createEventListeners(squares);
-
+createEventListenersOnCards(squares);
 
 
+var linkImage = function() {
+  for (var i = 0; i < allImages.length; i++) {
+  square = event.target;
+  square.classList.add(allImages[i]);
+  }
+}
+
+linkImage();
 
 
+// var createEventListenerOnPlay= function(event){
+// 	playButton=event.target;
+// 	console.log(event.target);
+// };
 
-
-
-
-
-
-
+// playButton.addEventListener('click', createEventListenerOnPlay, false);
 
 
 
