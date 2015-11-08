@@ -27,12 +27,25 @@ var allImages=['imageOne', 'imageTwo', 'imageThree', 'imageFour', 'imageFive',
 'imageSix', 'imageSeven', 'imageEight','imageNine', 'imageTen','imageEleven', 
 'imageTwelve', 'imageFourteen', 'imageFifteen', 'imageSixteen'];
 
-// var squareOne=document.getElementById('square-one');
-// var squareTwo=document.getElementById('square-two');
-// var squareThree=document.getElementById('square-three');
-// var squareFour=document.getElementById('square-four');
+var squareOne=document.getElementById('square-one');
+var squareTwo=document.getElementById('square-two');
+var squareThree=document.getElementById('square-three');
+var squareFour=document.getElementById('square-four');
+var squareFive=document.getElementById('square-five');
+var squareSix=document.getElementById('square-six');
+var squareSeven=document.getElementById('square-seven');
+var squareEight=document.getElementById('square-eight');
+var squareNine=document.getElementById('square-nine');
+var squareTen=document.getElementById('square-ten');
+var squareEleven=document.getElementById('square-eleven');
+var squareTwelve=document.getElementById('square-twelve');
+var squareThirteen=document.getElementById('square-thirteen');
+var squareFourteen=document.getElementById('square-fourteen');
+var squareFifteen=document.getElementById('square-fifteen');
+var squareSixteen=document.getElementById('square-sixteen');
 
-// var squares=[squareOne, squareTwo, squareThree, squareFour];
+var squares=[squareOne, squareTwo, squareThree, squareFour, squareFive, squareSix, squareSeven, squareEight,
+squareNine, squareTen, squareEleven, squareTwelve, squareThirteen, squareFourteen, squareFifteen, squareSixteen];
 
 var clickCounter= 0;
 
@@ -60,27 +73,50 @@ function shuffle(array) {
 var shuffleSquares=shuffle(allImages);
 
 
-///add event listener on cards///
-var clickSquares= function(){
-	cards=event.target;
-	  if(clickCounter===0) { 
-        cards.classList.add(shuffleSquares[0]);
-        clickCounter++;
-        cards.removeEventListener('click',clickSquares);
-	  }
-};
-
-cards.addEventListener('click', clickSquares);
-///
-// var clickSquaresOne= function(){
-// 	cards.length=event.target;
-// 	  if(clickCounter===1) { 
-//         cards.classList.add(1);
+/add event listener on cards///
+// var clickSquares= function(event){
+// 	cards=event.target;
+// 	  if(clickCounter===0) { 
+//         cards.classList.add(clickSquares[0]);
 //         clickCounter++;
+//         console.log(event.target)
 // 	  }
 // };
 
-// cards.addEventListener('click', clickSquaresOne);
+// cards.addEventListener('click', clickSquares);
+
+///slower version///
+// var clickSquareTwo=function(){
+// 	squareTwo=event.target;
+// 	console.log(event.target);
+// }
+
+// squareTwo.addEventListener('click', clickSquareTwo, false);
+
+
+var createEventListeners = function(){
+  for (var i = 0; i < squares.length; i++) 
+  	squares[i].addEventListener('click', createEventListeners);
+  	console.log(event.target);
+};
+
+
+createEventListeners(squares);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -99,7 +135,7 @@ cards.addEventListener('click', clickSquares);
 ///////
 
 ///J Query///
-$(document).ready(function(){
+// $(document).ready(function(){
 
-});
+// });
 
