@@ -23,13 +23,6 @@ var cards=document.querySelector('.cards');
 // var imageSixteen=document.querySelector('.imageEight');
 
 
-// var allImages=['imageOne', 'imageTwo', 'imageThree', 'imageFour', 'imageFive',
-// 'imageSix', 'imageSeven', 'imageEight','imageNine', 'imageTen','imageEleven', 
-// 'imageTwelve', 'imageFourteen', 'imageFifteen', 'imageSixteen'];
-
-//
-
-
 //alternative 1
 // var allImages =[];
 
@@ -53,37 +46,37 @@ var cards=document.querySelector('.cards');
 // shuffle the image classs strings
 // go through each card div and add that image class
 
- var allImages=['image1', 'image2', 'image3', 'image4', 'image5', 'image6', 'image7', 'image8', 
+ var allImages = ['image1', 'image2', 'image3', 'image4', 'image5', 'image6', 'image7', 'image8', 
  'image1', 'image2', 'image3', 'image4', 'image5', 'image6', 'image7', 'image8'];
 
- var cardDivs=document.querySelectorAll('.cards');
+ var cardDivs = document.querySelectorAll('.cards');
 
- cardDivs[0].classList.add(allImages[0])
+ cardDivs[0].classList.add(allImages[0]);
 
+///getting cards to shuffle///
  var shuffleCards= function(){
-  shuffle(allImages)
+  shuffle(allImages);
   for (var i = 0; i < allImages.length; i++){
     cardDivs[i].classList.add(allImages[i]);
   }
  };
 
-
-var square1 = document.getElementById('square-one');
-var square2 = document.getElementById('square-two');
-var square3 = document.getElementById('square-three');
-var square4 = document.getElementById('square-four');
-var square5 = document.getElementById('square-five');
-var square6 = document.getElementById('square-six');
-var square7 = document.getElementById('square-seven');
-var square8 = document.getElementById('square-eight');
-var square9 = document.getElementById('square-nine');
-var square10 = document.getElementById('square-ten');
-var square11 = document.getElementById('square-eleven');
-var square12 = document.getElementById('square-twelve');
-var square13 = document.getElementById('square-thirteen');
-var square14 = document.getElementById('square-fourteen');
-var square15 = document.getElementById('square-fifteen');
-var square16 = document.getElementById('square-sixteen');
+var square1 = document.getElementById('square1');
+var square2 = document.getElementById('square2');
+var square3 = document.getElementById('square3');
+var square4 = document.getElementById('square4');
+var square5 = document.getElementById('square5');
+var square6 = document.getElementById('square6');
+var square7 = document.getElementById('square7');
+var square8 = document.getElementById('square8');
+var square9 = document.getElementById('square9');
+var square10 = document.getElementById('square10');
+var square11 = document.getElementById('square11');
+var square12 = document.getElementById('square12');
+var square13 = document.getElementById('square13');
+var square14 = document.getElementById('square14');
+var square15 = document.getElementById('square15');
+var square16 = document.getElementById('square16');
 
 var squares = [square1, square2, square3, square4, square5, square6, square7, square8,
 square9, square10, square11, square12, square13, square14, square15, square16];
@@ -116,23 +109,30 @@ var shuffleSquares = shuffle(allImages);
 var previousCard;
 
 
-// var makeFaceDown = function(card, previousCard){
+// var makeFaceDown = function(card, previousCard){}
+
 //   card.classList.add('facedown');
 //   previousCard.classList.add('facedown');
 // };
 
 var clickSquare = function(event){
 	card = event.target;
-	card.classList.remove("facedown");
-  console.log(event.target)
+	card.classList.remove('facedown');
+  console.log(event.target);
   clickCounter++;
-  if(clickCounter === 24) { 
+  if(clickCounter === 26) { 
+    // var lost=document.createElement('h2');
+    // var lost2=document.createTextNode('Sorry, you lost');
+    // lost.appendChild(lost2);
     console.log('lost');
     //if matches aren't all complete game over
-  } else if (clickCounter % 2 === 0) {
+  } else if (clickCounter % 2=== 1){
+    previousCard = card;
+  } else if (clickCounter % 2 === 0) { 
+    console.log('blah');
     //matching check logic
     //previous card matches this card??
-    var imageClasses = ['imageOne', 'imageTwo', 'imageThree', 'imageFour', 'imageFive', 'imageSix', 'imageSeven', 'imageEight'];
+    var imageClasses = ['image1', 'image2', 'image3', 'image4', 'image5', 'image6', 'image7', 'image8'];
     var cardImageClass = imageClasses.filter(function(className){
       return card.classList.contains(className);
     });
@@ -140,14 +140,18 @@ var clickSquare = function(event){
     var previousCardImageClass = imageClasses.filter(function(className){
       return previousCard.classList.contains(className);
     });
-    if (previousCardImageClass !== cardImageClass) {
+    if(previousCardImageClass === cardImageClass){
+      card.classList.remove('facedown');
+      previousCard.classList.remove('facedown');
+      console.log('meh');
+     } else if (previousCardImageClass !== cardImageClass) {
       // If they don't match, then flip facedown again
-        card.classList.add('facedown');
-        previousCard.classList.add('facedown');
-        window.setTimeout(clickSquare, 2000);
+        window.setTimeout(function() {
+          card.classList.add('facedown');
+          previousCard.classList.add('facedown');
+        }, 1000);   
     }
   }
-  previousCard = card;
 };
 
 
@@ -166,8 +170,6 @@ var createEventListenersOnCards = function(squares){
 
 
 createEventListenersOnCards(squares);
-
-
 
 ///Event Listener on Play Button///
 var createEventListenerOnPlay= function(event){

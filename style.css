@@ -1,11 +1,16 @@
 
 body{
- background-image: url('http://www.wallpaperjoo.com/wp-content/uploads/2015/09/white-brick-wall-7-Awesome-Wallpapers.jpg');
- background-color: rgba(255, 255, 255, 0.7);
+ background-image: url('wall.jpg')
 }
 
 #container{
 
+}
+
+h2{
+  width:100px;
+  height: 100px;
+  font-color:black;
 }
 
 .game-score{
@@ -141,7 +146,6 @@ body{
 	padding-right: 10px;
 	font-family: Shadows Into Light;
 	background-color:#FDF5E6;
-
 }
 
 .button{
@@ -154,8 +158,6 @@ body{
 
 .facedown{
    background-image:url('http://i.imgur.com/vqeF934.png?1');
-
-
 }
 
 

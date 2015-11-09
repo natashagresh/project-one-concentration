@@ -1,8 +1,8 @@
 # project-one-concentration
-I have decided to do the game concentration. My theme will be (...not sure yet).
+I have decided to do the game concentration. The theme is Taylor Swift's latest album-1989.
 
 **1.Overview and General Instructions:**
-  *The game Concentration will involve 16 cards (laid out in a row of 4 x 4). There will overall be 8 different cards (as 8*2=16). You will have 12 tries to pick correctly and win. You will lose if it takes more than 12 times to pair the 16 cards together. 
+  *The game Concentration will involve 16 cards (laid out in a row of 4 x 4). There will overall be 8 different cards (as 8 * 2=16). You will have 12 tries to pick correctly and win. You will lose if it takes more than 12 times to pair the 16 cards together. 
   
   *The board will have 16 cards set in a row 4 by 4 with a header <Concentration>. Next to the header on the top right side, there will be a "recorded tries" placement that will record the amount of tries you have had, out of 12. eg. "tries : 1/12". If you have reached 12 and still have not won, the game will need to be able to register that you have lost. 
   
@@ -44,7 +44,7 @@ I have decided to do the game concentration. My theme will be (...not sure yet).
 
 ***Reference Links***
 1.http://bost.ocks.org/mike/shuffle/
- 
+
     
     
     
