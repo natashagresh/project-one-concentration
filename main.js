@@ -88,36 +88,31 @@ var shuffleSquares=shuffle(allImages);
 
 // cards.addEventListener('click', clickSquares);
 
-///slower version///
-// var clickSquareTwo=function(){
-// 	squareTwo=event.target;
-// 	console.log(event.target);
-// }
 
-// squareTwo.addEventListener('click', clickSquareTwo, false);
+var getImageToRespond=function(){
+var square = event.target;
+square.classList.remove("facedown");
+};
 
 ///A for loop on Event listeners on cards///
 var createEventListenersOnCards = function(){
   for (var i = 0; i < squares.length; i++) 
-  	squares[i].addEventListener('click', createEventListenersOnCards);
+  	squares[i].addEventListener('click', getImageToRespond);
   	console.log(event.target);
 };
 
+
 createEventListenersOnCards(squares);
 
-
-var linkImage = function() {
-  for (var i = 0; i < allImages.length; i++) {
-  square = event.target;
-  square.classList.add(allImages[i]);
-  }
+var twoClicks=function(){
+ if (clickCounter < 2){
+	square.classList.add('facedown');
 }
-
-linkImage();
+};
 
 
 // var createEventListenerOnPlay= function(event){
-// 	playButton=event.target;
+// 	var playButton=event.target;
 // 	console.log(event.target);
 // };
 
