@@ -1,3 +1,4 @@
+
 body{
  background-image: url('http://www.wallpaperjoo.com/wp-content/uploads/2015/09/white-brick-wall-7-Awesome-Wallpapers.jpg');
  background-color: rgba(255, 255, 255, 0.7);
@@ -95,35 +96,35 @@ body{
 
 
 
-.imageOne{
+.image1{
 	background-image: url('http://i.imgur.com/he7TO5N.png?1');
 }
 
-.imageTwo{
+.image2{
 	background-image: url('http://i.imgur.com/GKibs3v.jpg?1');
 }
 
-.imageThree{
+.image3{
 	background-image: url('http://i.imgur.com/5FZNdl3.jpg?1');
 }
 
-.imageFour{
+.image4{
 	background-image: url('http://i.imgur.com/oRvNuZ4.png?1');
 }
 
-.imageFive{
+.image5{
 	background-image: url('http://i.imgur.com/Ga5niT4.jpg?1');
 }
 
-.imageSix{
+.image6{
     background-image: url('http://i.imgur.com/RC6LH7V.jpg?1');
 }
 
-.imageSeven{
+.image7{
 	background-image: url('http://i.imgur.com/bxYMB4d.jpg?1');
 }
 
-.imageEight{
+.image8{
 	background-image: url('http://i.imgur.com/ca4oPva.jpg?1');
 }
 
@@ -138,6 +139,8 @@ body{
 	font-size: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
+	font-family: Shadows Into Light;
+	background-color:#FDF5E6;
 
 }
 
@@ -145,10 +148,13 @@ body{
     font-size: 20px;
     padding-left: 10px;
 	padding-right: 10px;
+	font-family: Shadows Into Light;
+	background-color: #FDF5E6;
 }
 
 .facedown{
    background-image:url('http://i.imgur.com/vqeF934.png?1');
+
 
 }
 
