@@ -109,6 +109,7 @@ var shuffleSquares = shuffle(allImages);
 var previousCard;
 
 
+
 // var makeFaceDown = function(card, previousCard){}
 
 //   card.classList.add('facedown');
@@ -134,12 +135,13 @@ var clickSquare = function(event){
     //previous card matches this card??
     var imageClasses = ['image1', 'image2', 'image3', 'image4', 'image5', 'image6', 'image7', 'image8'];
     var cardImageClass = imageClasses.filter(function(className){
-      return card.classList.contains(className);
+      return card.classList.contains('className');
     });
 
     var previousCardImageClass = imageClasses.filter(function(className){
-      return previousCard.classList.contains(className);
+      return previousCard.classList.contains('className');
     });
+
     if(previousCardImageClass === cardImageClass){
       card.classList.remove('facedown');
       previousCard.classList.remove('facedown');
@@ -153,7 +155,6 @@ var clickSquare = function(event){
     }
   }
 };
-
 
 
 // var getImageToRespond = function(event){
