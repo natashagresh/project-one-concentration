@@ -47,7 +47,7 @@ I have decided to do the game concentration. The theme is Taylor Swift's latest 
  4. [First game won!](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7174.JPG)
     
 **6.Link to playable app:** 
-....  
+http://natashagresh.github.io/taylor_swift_concentration/ 
 
 ***Reference Links***
 1.http://bost.ocks.org/mike/shuffle/
