@@ -2,26 +2,15 @@
 <html>
 <head>
  <link rel="stylesheet" src="style/css" href="style.css">
- <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 	<title></title>
 </head>
 <body>
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700italic,500italic,300italic|Lobster|Shadows+Into+Light' rel='stylesheet' type='text/css'>
   <div class="container">
-   <div class="game-score"> 
-   <p id="tries">Tries
-   </p>
-   <p id="matches">Matches
-   </p>
-  </div>
-    <div class="overall-game-score">
-   <p id="total-score">Total Score
-   </p>
-   <p id="games-played">Games Played
-   </p>
-  </div> 
    <h1 id ="h1">Taylor Swift vs Concentration
    </h1>
+   <div id="loser-container">
+   </div>
       <div class="game-board">
         <div id="square1" class="cards facedown">
         </div>
@@ -59,6 +48,8 @@
       <div id="play-and-reset">
    <button class="play">Play</button>
    <button class="button">Reset</button>
+   <div class="winner-loser">
+   </div>
    </div>
    <script src='main.js'></script>
   </div>

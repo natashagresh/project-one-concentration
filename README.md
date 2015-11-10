@@ -12,15 +12,16 @@ I have decided to do the game concentration. The theme is Taylor Swift's latest 
     
 **2.Step by Step Overview:**
  1. The game is laid out infront of you.
- 2. Player is able to pick two cards from selection
- 3. Cards flip over
- 4. If cards are matching then they stay flipped over and "Matching!" pops up
- 5. If cards arent matching, they turn back over and "Not Matching!" pops up
- 6. Player had 12 tries to get 16 cards paired with their partner
- 7. If able to match all 16 cards, then cards dissolve and a "You Won!" appears
- 8. If unable to match cards after 12 tries, cards dissolve and a "You lost!" appears
- 9. A reset button will allow you to restart game from beginning
- 10. Otherwise you can play multiple games without reseting-new game will begin.
+ 2. Player must click Play button to start working
+ 3. Player is able to pick two cards from selection
+ 4. Cards flip over
+ 5. If cards are matching then they stay flipped over
+ 6. If cards arent matching, they turn back over
+ 7. Player had 32 tries to get 16 cards paired with their partner
+ 8. If able to match all 16 cards, then cards dissolve and a "You Won!" appears (didnt get to this, sorry!)
+ 9. If unable to match cards after 12 tries, a "You lost!" appears
+ 10. A reset button will allow you to restart game from beginning
+ 11. Otherwise you can play multiple games without reseting-new game will begin.
 
 **3.List of technologies use:**
   HTML, CSS, JS and (JQuery?)
@@ -35,8 +36,9 @@ I have decided to do the game concentration. The theme is Taylor Swift's latest 
  6. Get cards to recognise faceup/facedown
  7. Get cards to stay faceup if 2 cards are matching/go facedown if not
  8. Get cards to recognise a loser after 26 tries
- 9. Get cards to recognise a winner once all done!
- 10. Et Voila! All done! Time to "shake it off" and sleep. 
+ 9. Get cards to recognise a winner once all done! (opps never accomplished!)
+ 10. Add Reset button
+ 11. Et Voila! All done! Time to "shake it off" and sleep. 
   
 **5.Wire Frame**
  1. [Beginning of Game](https://github.com/natashagresh/project-one-concentration/blob/gh-pages/Wire%20Frame%20Images/IMG_7176.JPG)

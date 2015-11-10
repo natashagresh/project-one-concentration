@@ -5,42 +5,6 @@ var resetButton=document.querySelector('.button');
 var playButton=document.querySelector('.play');
 var cards=document.querySelector('.cards');
 
-// var imageOne = document.querySelector('.imageOne');
-// var imageTwo=document.querySelector('.imageTwo');
-// var imageThree=document.querySelector('.imageThree');
-// var imageFour=document.querySelector('.imageFour');
-// var imageFive=document.querySelector('.imageFive');
-// var imageSix=document.querySelector('.imageSix');
-// var imageSeven=document.querySelector('.imageSeven');
-// var imageEight=document.querySelector('.imageEight');
-// var imageNine=document.querySelector('.imageOne');
-// var imageTen=document.querySelector('.imageTwo');
-// var imageEleven=document.querySelector('.imageThree');
-// var imageTwelve=document.querySelector('.imageFour');
-// var imageThirteen=document.querySelector('.imageFive');
-// var imageFourteen=document.querySelector('.imageSix');
-// var imageFifteen=document.querySelector('.imageSeven');
-// var imageSixteen=document.querySelector('.imageEight');
-
-
-//alternative 1
-// var allImages =[];
-
-// loop sixteen times
-// for(){
-	// create DOM element
-	// give it the right class name
-	// push it into the all Images array
-	// var square = document.createElement('div');
-	// square1.className = 'square-1';
-	// 'square-' + i;
-// }
-
-// shuffle the allImages
-
-// alternative 2
-// remove all div elements from game board and then reappend in shuffled order
-
 // alternative 3
 // create an array of the classStrings
 // shuffle the image classs strings
@@ -108,41 +72,37 @@ var shuffleSquares = shuffle(allImages);
 
 var previousCard;
 
-
-
-// var makeFaceDown = function(card, previousCard){}
-
-//   card.classList.add('facedown');
-//   previousCard.classList.add('facedown');
-// };
-
 var clickSquare = function(event){
 	card = event.target;
 	card.classList.remove('facedown');
   console.log(event.target);
   clickCounter++;
-  if(clickCounter === 26) { 
-    // var lost=document.createElement('h2');
-    // var lost2=document.createTextNode('Sorry, you lost');
-    // lost.appendChild(lost2);
+  if(clickCounter === 32) { 
+    var lost = document.createElement('h2');
+    var title = document.querySelector('#loser-container');
+    lost.innerText = 'Sorry, we are never ever getting back together';
+    title.appendChild(lost);
     console.log('lost');
     //if matches aren't all complete game over
-  } else if (clickCounter % 2=== 1){
+   } else if (clickCounter % 2 === 1){
     previousCard = card;
-  } else if (clickCounter % 2 === 0) { 
+    } else if (clickCounter % 2 === 0) { 
     console.log('blah');
     //matching check logic
     //previous card matches this card??
     var imageClasses = ['image1', 'image2', 'image3', 'image4', 'image5', 'image6', 'image7', 'image8'];
     var cardImageClass = imageClasses.filter(function(className){
-      return card.classList.contains('className');
+      return card.classList.contains(className);
     });
 
     var previousCardImageClass = imageClasses.filter(function(className){
-      return previousCard.classList.contains('className');
+      return previousCard.classList.contains(className);
     });
 
-    if(previousCardImageClass === cardImageClass){
+    console.log(previousCardImageClass);
+    console.log(cardImageClass);
+
+    if(previousCardImageClass[0] == cardImageClass[0]){
       card.classList.remove('facedown');
       previousCard.classList.remove('facedown');
       console.log('meh');
@@ -152,15 +112,21 @@ var clickSquare = function(event){
           card.classList.add('facedown');
           previousCard.classList.add('facedown');
         }, 1000);   
-    }
-  }
+        console.log(previousCardImageClass);
+        console.log(cardImageClass);
+    }  
+    }    
 };
 
+var winnerLoser=function(){
+  if (clickCounter === 32){
+    var lost= document.querySelector('.winner-loser');
+    lost.textContent('Sorry, we are never ever getting back together');
+    console.log('you lost again you loser');
+};
+};
 
-// var getImageToRespond = function(event){
-// var square = event.target;
-// square.classList.remove("facedown");
-// };
+winnerLoser();
 
 ///A for loop on Event listeners on cards///
 var createEventListenersOnCards = function(squares){
@@ -174,15 +140,21 @@ createEventListenersOnCards(squares);
 
 ///Event Listener on Play Button///
 var createEventListenerOnPlay= function(event){
-	var playButton=event.target;
-	console.log(event.target);
+	var playButton = event.target;  
 };
 
 playButton.addEventListener('click', shuffleCards);
 
+var createEventListenerOnReset = function(event){
+  var resetButton = event.target;
+  for(var i = 0; i < squares.length; i++) {
+    squares[i].classList.add('facedown');
+  };
+  clickCounter = 0;
+  console.log(clickCounter);
+  var finalRemove = document.querySelector('#loser-container');
+  document.getElementsByTagName('h2')[0].style.display = 'none';  
+};
 
-///J Query///
-// $(document).ready(function(){
-
-// });
+resetButton.addEventListener('click', createEventListenerOnReset);
 

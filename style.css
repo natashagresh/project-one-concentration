@@ -3,46 +3,14 @@ body{
  background-image: url('wall.jpg')
 }
 
-#container{
-
-}
-
 h2{
-  width:100px;
+  width:800px;
   height: 100px;
-  font-color:black;
-}
-
-.game-score{
-   width:100px;
-   height:100px;
-   margin-left:50px;
-   margin-top:30px;
-   float: left;
-}
-
-#tries{
-
-}
-
-#matches{
-
-}
-
-.overall-game-score{
-   width:100px;
-   height:100px;
-   margin-right:50px;
-   margin-top: 30px;
-   float:right;
-}
-
-#total-score{
-
-}
-
-#games-played{
-
+  font-family: Shadows Into Light;
+  font-weight: bold;
+  color:#708090;
+  margin:0 auto;
+  text-align: center;
 }
 
 #h1{
@@ -56,8 +24,6 @@ h2{
 
 .game-board{
 	margin:0 auto;
-/*	border-style: solid;
-	border-color: black;*/
 	width:680px;
 	height:680px;
 }
@@ -67,39 +33,7 @@ h2{
 	height:150px;
 	float: left;
 	margin: 10px;
-/*	border-style: solid;
-	border-color: black;*/
 }
-
-/*#square-one{
-	width: 200px;
-	height:200px;
-	float:left;
-	margin: 10px;
-}*/
-
-/*#square-two{
-	width: 200px;
-	height:200px;
-    float:left;
-	margin:10px;
-}
-
-#square-three{
-    width: 200px;
-	height:200px;
-    float:left;
-	margin:10px;
-}
-
-#square-four{
-    width: 200px;
-	height:200px;
-    float:left;
-	margin:10px;
-}*/
-
-
 
 .image1{
 	background-image: url('http://i.imgur.com/he7TO5N.png?1');
